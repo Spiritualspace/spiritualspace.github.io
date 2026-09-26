@@ -11,24 +11,26 @@
             --sacred-card: rgba(28, 37, 65, 0.6);
             --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
         }
-        body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; line-height: 1.9; letter-spacing: 0.05em; }
-        .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3)); }
-        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 30px 0; }
-        .container { width: 85%; max-width: 700px; margin: 0 auto; }
+        body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; line-height: 1.7; letter-spacing: 0.04em; }
+        .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 4px rgba(212, 175, 55, 0.3)); }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 15px 0; }
+        .container { width: 90%; max-width: 650px; margin: 0 auto; }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; text-decoration: none; font-weight: 600; }
-        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 30px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.18em; }
-        .nav-links a:hover, .nav-links a.active { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        h1 { font-family: 'Cinzel Decorative', serif; text-align: center; margin-top: 60px; font-size: 2.5rem; }
-        .form-desc { text-align: center; color: #ebd197; margin-bottom: 40px; font-size: 1.05rem; }
-        form { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 45px; border-radius: 16px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
-        .form-group { margin-bottom: 25px; }
-        label { display: block; margin-bottom: 10px; font-family: 'Marcellus', serif; font-size: 0.95rem; color: #ebd197; letter-spacing: 0.1em; }
-        input, select, textarea { width: 100%; padding: 14px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; font-size: 1rem; }
-        input:focus, select:focus, textarea:focus { border-color: #fcf6ba; outline: none; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
-        .btn-submit { font-family: 'Marcellus', serif; background: transparent; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 14px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.2em; cursor: pointer; transition: all 0.4s; width: 100%; margin-top: 15px; }
-        .btn-submit:hover { border-color: #fcf6ba; box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.2), 0 0 15px rgba(212, 175, 55, 0.2); text-shadow: 0 0 5px #fff; }
-        footer { text-align: center; padding: 60px 0; font-family: 'Marcellus', serif; font-size: 0.85rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 100px; }
+        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.5rem; text-decoration: none; font-weight: 600; }
+        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 25px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; }
+        
+        h1 { font-family: 'Cinzel Decorative', serif; text-align: center; margin: 30px 0 10px 0; font-size: 2.2rem; }
+        .form-desc { text-align: center; color: #ebd197; margin-bottom: 20px; font-size: 1rem; }
+        .operational-notice { background: rgba(191, 149, 63, 0.05); border: 1px dashed rgba(212, 175, 55, 0.3); padding: 15px; border-radius: 8px; margin-bottom: 25px; font-size: 0.9rem; text-align: center; color: #fbf5b7; }
+        
+        form { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 35px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+        .form-group { margin-bottom: 18px; }
+        label { display: block; margin-bottom: 6px; font-family: 'Marcellus', serif; font-size: 0.9rem; color: #ebd197; }
+        input, select, textarea { width: 100%; padding: 11px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; font-size: 0.95rem; }
+        
+        .btn-submit { font-family: 'Marcellus', serif; background: transparent; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 12px; border-radius: 4px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; cursor: pointer; transition: all 0.4s; width: 100%; margin-top: 10px; }
+        .btn-submit:hover { border-color: #fcf6ba; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+        footer { text-align: center; padding: 30px 0; font-family: 'Marcellus', serif; font-size: 0.8rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -51,41 +53,23 @@
         <h1 class="gold-ink">Seek Chart Analysis</h1>
         <p class="form-desc">Please share your precise birth alignments. Your data remains entirely sacred and private.</p>
         
+        <div class="operational-notice">
+            🕊️ <strong>A Note on Our Process:</strong> To ensure your cosmic alignments are studied with deep meditation and focus, our collective will send a <strong>personally written letter to your inbox within 5 to 7 days</strong>.
+        </div>
+
         <form action="https://formspree.io" method="POST">
             <input type="hidden" name="_next" value="https://github.io">
-            
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="_replyto" required placeholder="Where can we send your reading?">
-            </div>
+            <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="_replyto" required></div>
             <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                <div>
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div>
-                    <label for="tob">Exact Time of Birth</label>
-                    <input type="time" id="tob" name="tob" required>
-                </div>
+                <div><label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required></div>
+                <div><label for="tob">Exact Time of Birth</label><input type="time" id="tob" name="tob" required></div>
             </div>
-            <div class="form-group">
-                <label for="pob">Place of Birth (City, State, Country)</label>
-                <input type="text" id="pob" name="pob" required placeholder="e.g., Mumbai, Maharashtra, India">
-            </div>
-            <div class="form-group">
-                <label for="questions">Your Core Life Area / Professional Questions</label>
-                <textarea id="questions" name="questions" rows="5" required placeholder="Please humbly describe the life patterns or career situations you seek light upon..."></textarea>
-            </div>
+            <div class="form-group"><label for="pob">Place of Birth</label><input type="text" id="pob" name="pob" required placeholder="City, State, Country"></div>
+            <div class="form-group"><label for="questions">Your Questions</label><textarea id="questions" name="questions" rows="4" required></textarea></div>
             <button type="submit" class="btn-submit">Submit Details Humbly</button>
         </form>
     </div>
-
-    <footer>
-        <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
-    </footer>
+    <footer><p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p></footer>
 </body>
 </html>
