@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhurat Services | Spiritual Space</title>
+    <title>Chart Consultation | Spiritual Space</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        /* Core visual theme match */
         :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
         body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; line-height: 1.6; }
         header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 20px 0; }
@@ -15,13 +14,15 @@
         .logo { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--accent-gold); text-decoration: none; }
         .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 20px; }
         .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
-        h1 { font-family: 'Lora', serif; color: var(--accent-gold); text-align: center; margin-top: 40px; }
-        .form-desc { text-align: center; color: var(--text-muted); margin-bottom: 40px; }
+        h1 { font-family: 'Lora', serif; color: var(--accent-gold); text-align: center; margin-top: 40px; margin-bottom: 10px; }
+        .form-desc { text-align: center; color: var(--text-muted); margin-bottom: 30px; font-size: 0.95rem; }
+        .meta-notice { background: rgba(212, 175, 55, 0.08); border: 1px dashed var(--accent-gold); padding: 15px; border-radius: 6px; margin-bottom: 30px; font-size: 0.88rem; text-align: center; color: #dfdfdf; }
         form { background-color: var(--card-bg); padding: 35px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.1); }
         .form-group { margin-bottom: 20px; }
         label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--accent-gold); }
         input, select, textarea { width: 100%; padding: 12px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #0b132b; color: white; font-family: inherit; box-sizing: border-box; }
-        .btn-submit { background-color: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 12px 30px; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: all 0.3s; width: 100%; }
+        input:focus, select:focus, textarea:focus { border-color: var(--accent-gold); outline: none; }
+        .btn-submit { background-color: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 12px 30px; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: all 0.3s; width: 100%; margin-top: 10px; }
         .btn-submit:hover { background-color: var(--accent-gold); color: var(--bg-color); }
         footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: 60px; }
         footer a { color: var(--text-muted); text-decoration: none; }
@@ -35,8 +36,8 @@
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="wisdom.html">Philosophy</a>
-                    <a href="consultation.html">Chart Analysis</a>
-                    <a href="muhurat.html" class="active">Muhurat</a>
+                    <a href="consultation.html" class="active">Chart Analysis</a>
+                    <a href="muhurat.html">Muhurat</a>
                     <a href="dakshina.html">Dakshina</a>
                 </div>
             </nav>
@@ -44,41 +45,50 @@
     </header>
 
     <div class="container">
-        <h1>Auspicious Muhurat Request</h1>
-        <p class="form-desc">Calculate specific Panchang alignments for your new beginnings.</p>
+        <h1>Seek Chart Analysis</h1>
+        <p class="form-desc">Please share your precise birth alignments. Your data remains entirely sacred and private.</p>
         
+        <div class="meta-notice">
+            🕊️ <strong>Operational Guidance:</strong> All comprehensive analyses are prepared with deep reverence and delivered directly to your inbox as a <strong>detailed written response</strong> within <strong>5 to 7 days</strong>.
+        </div>
+
+        <!-- Replace your_formspree_id with your real Formspree endpoint -->
         <form action="https://formspree.io" method="POST">
+            <!-- Formspree redirection rule to stay on your site -->
+            <input type="hidden" name="_next" value="https://github.io">
+            
             <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="_replyto" required>
+                <input type="email" id="email" name="_replyto" required placeholder="Where can we send your reading?">
+            </div>
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="tob">Exact Time of Birth</label>
+                    <input type="time" id="tob" name="tob" required>
+                </div>
             </div>
             <div class="form-group">
-                <label for="event_type">Nature of Event / Venture</label>
-                <select id="event_type" name="event_type">
-                    <option value="business">Business Launch / Shop Opening</option>
-                    <option value="marriage">Sacred Marriage Ceremony</option>
-                    <option value="griha_pravesh">Griha Pravesh (House Warming)</option>
-                    <option value="other">Other Auspicious Milestone</option>
-                </select>
+                <label for="pob">Place of Birth (City, State, Country)</label>
+                <input type="text" id="pob" name="pob" required placeholder="e.g., Mumbai, Maharashtra, India">
             </div>
             <div class="form-group">
-                <label for="date_range">Preferred Date Window / Time Frame</label>
-                <input type="text" id="date_range" name="date_range" required placeholder="e.g., Between Nov 1st and Nov 15th, 2026">
+                <label for="questions">Your Core Life Area / Professional Questions</label>
+                <textarea id="questions" name="questions" rows="5" required placeholder="Please humbly describe the life patterns or career situations you seek light upon..."></textarea>
             </div>
-            <div class="form-group">
-                <label for="location">Location where event takes place (City, State)</label>
-                <input type="text" id="location" name="location" required placeholder="Required for local sunrise/sunset calculations">
-            </div>
-            <button type="submit" class="btn-submit">Request Auspicious Calculation</button>
+            <button type="submit" class="btn-submit">Submit Details Humbly</button>
         </form>
     </div>
 
     <footer>
-        <p>&copy; 2026 Spiritual Space. All Rights Reserved. | <a href="legal.html">Terms & Disclaimer</a></p>
+        <p>&copy; 2026 Spiritual Space. All Rights Reserved. | <a href="legal.html">Terms, Disclaimer & Privacy Policy</a></p>
     </footer>
 </body>
 </html>
