@@ -19,27 +19,31 @@
             color: #f6ebd0;
             margin: 0;
             padding: 0;
-            line-height: 2;
-            letter-spacing: 0.05em;
+            line-height: 1.8;
+            letter-spacing: 0.04em;
         }
         .gold-ink {
             background: var(--gold-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
-            filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3));
+            filter: drop-shadow(0px 2px 4px rgba(212, 175, 55, 0.3));
         }
-        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 30px 0; }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 15px 0; }
         .container { width: 85%; max-width: 1200px; margin: 0 auto; }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; text-decoration: none; font-weight: 600; }
-        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 30px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.18em; transition: all 0.3s; }
-        .nav-links a:hover, .nav-links a.active { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 10px rgba(252, 246, 186, 0.4); }
-        .content-block { max-width: 800px; margin: 80px auto; padding: 60px; background: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 16px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
-        h1, h2 { font-family: 'Cinzel Decorative', serif; text-align: center; margin-bottom: 30px; }
-        .quote { font-style: italic; text-align: center; color: #ebd197; font-size: 1.25rem; border-left: 3px solid #bf953f; border-right: 3px solid #bf953f; padding: 10px 20px; margin: 40px 0; }
-        p { text-align: justify; margin-bottom: 25px; font-size: 1.05rem; }
-        footer { text-align: center; padding: 40px 0; font-family: 'Marcellus', serif; font-size: 0.85rem; letter-spacing: 0.12em; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 100px; }
+        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.5rem; text-decoration: none; font-weight: 600; }
+        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 25px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; }
+        .nav-links a:hover, .nav-links a.active { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Compacted Content Block */
+        .content-block { max-width: 800px; margin: 40px auto; padding: 40px; background: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+        h1, h2 { font-family: 'Cinzel Decorative', serif; text-align: center; margin: 0 0 20px 0; }
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.4rem; margin-top: 30px; }
+        .quote { font-style: italic; text-align: center; color: #ebd197; font-size: 1.15rem; border-left: 2px solid #bf953f; border-right: 2px solid #bf953f; padding: 5px 15px; margin: 25px 0; }
+        p { text-align: justify; margin-bottom: 20px; font-size: 1rem; }
+        footer { text-align: center; padding: 30px 0; font-family: 'Marcellus', serif; font-size: 0.8rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 40px; }
         footer a { color: #ebd197; text-decoration: none; }
     </style>
 </head>
@@ -66,14 +70,14 @@
         </div>
         <p>Vedic Astrology, or <em>Jyotish</em>, translates directly to the "Science of Light." It is a profound Vedanga meant to lift the veil of confusion from our consciousness, helping us align our daily actions with higher universal laws.</p>
         
-        <h2 class="gold-ink" style="font-size: 1.6rem; margin-top: 50px;">Our Sacred Approach</h2>
+        <h2 class="gold-ink">Our Sacred Approach</h2>
         <p>In this digital sanctuary, we consciously step away from fear-based predictions and commercial rituals. We believe that planetary positions show tendencies and energetic currents, but your conscious intent and spiritual efforts hold the power to sculpt your destiny.</p>
         <p>We treat every birth chart as a confidential soul configuration. Whether you are navigating professional turbulence, marital adjustments, or inner blockages, we approach your queries with absolute politeness, patience, and humility.</p>
     </div>
 
     <footer>
         <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
-        <p style="margin-top: 15px;"><a href="legal.html" style="color: #ebd197; text-decoration: none;">Terms, Disclaimer & Sacred Privacy</a></p>
+        <p style="margin-top: 10px;"><a href="legal.html" style="color: #ebd197; text-decoration: none;">Terms, Disclaimer & Sacred Privacy</a></p>
     </footer>
 </body>
 </html>
