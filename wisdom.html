@@ -3,57 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflections | SpritualSpace</title>
+    <title>Our Philosophy | Spiritual Space</title>
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
-        .container { max-width: 680px; margin: 0 auto; padding: 20px; }
-        nav { padding: 30px 0; border-bottom: 1px solid #e6e0d8; margin-bottom: 30px; }
-        nav a { text-decoration: none; color: #666; font-size: 0.95rem; font-weight: bold; }
-        nav a:hover { color: #1a1a1a; }
-        header { text-align: center; padding: 30px 0; }
-        h1 { font-size: 2rem; font-weight: 400; color: #1a1a1a; }
-        .subtitle { font-style: italic; color: #666; }
-        .section { margin: 40px 0; }
-        .widget-wrapper { background: #ffffff; padding: 15px; border-radius: 6px; border: 1px solid #e6e0d8; margin-top: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        blockquote { font-style: italic; border-left: 3px solid #d4c5b3; padding-left: 20px; color: #555; margin: 25px 0; }
-        .video-list { list-style: none; padding: 0; }
-        .video-list li { margin-bottom: 15px; background: white; padding: 15px; border: 1px solid #e6e0d8; border-radius: 4px; }
-        .video-list a { color: #4a5568; text-decoration: underline; font-weight: bold; }
+        /* Reusing common structural styles for seamless navigation */
+        :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; line-height: 1.6; }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 20px 0; }
+        .container { width: 85%; max-width: 800px; margin: 0 auto; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--accent-gold); text-decoration: none; }
+        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-size: 0.95rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
+        h1, h2 { font-family: 'Lora', serif; color: var(--accent-gold); text-align: center; }
+        .content-block { padding: 60px 0; }
+        .quote { font-family: 'Lora', serif; font-style: italic; text-align: center; color: var(--text-muted); font-size: 1.1rem; border-left: 2px solid var(--accent-gold); padding-left: 20px; margin: 30px 0; }
+        footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: 60px; }
+        footer a { color: var(--text-muted); text-decoration: none; }
     </style>
 </head>
 <body>
-<div class="container">
-    <nav><a href="index.html">← Back to Home</a></nav>
     <header>
-        <h1>Daily Alignment & Ancient Rhythm</h1>
-        <p class="subtitle">Timeless roots and cosmic maps to guide your walk</p>
-    </header>
-    <div class="section">
-        <h2>Aaj Ka Panchang (Today's Celestial Map)</h2>
-        <p>A quiet mapping of the day's planetary qualities, tracking current Tithi, Nakshatra, and sensitive time windows automatically.</p>
-        <div class="widget-wrapper">
-            <iframe src="https://asksoma.ai" title="Daily Vedic Panchang Widget" width="100%" height="760" loading="lazy" style="border:0; max-width:100%;"></iframe>
+        <div class="container" style="max-width: 1100px;">
+            <nav>
+                <a href="index.html" class="logo">Spiritual Space</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="wisdom.html" class="active">Philosophy</a>
+                    <a href="consultation.html">Chart Analysis</a>
+                    <a href="muhurat.html">Muhurat</a>
+                    <a href="dakshina.html">Dakshina</a>
+                </div>
+            </nav>
         </div>
+    </header>
+
+    <div class="container content-block">
+        <h1>The Way of Jyotish</h1>
+        <div class="quote">
+            "Astrology is not a net that binds you; it is a lamp meant to reveal your hidden pathways."
+        </div>
+        <p>Vedic Astrology, or <em>Jyotish</em>, translates directly to the "Science of Light." It is a profound Vedanga meant to lift the veil of confusion from our consciousness, helping us align our daily actions with higher universal laws.</p>
+        
+        <h2>Our Sacred Approach</h2>
+        <p>In this digital sanctuary, we consciously step away from fear-based predictions and commercial rituals. We believe that planetary positions show tendencies and energetic currents, but your conscious intent and spiritual efforts hold the power to sculpt your destiny.</p>
+        <p>We treat every birth chart as a confidential soul configuration. Whether you are navigating professional turbulence, marital adjustments, or inner blockages, we approach your queries with absolute politeness, patience, and humility.</p>
     </div>
-    <div class="section">
-        <h2>Reflections & Sanskrit Verses</h2>
-        <blockquote>
-            "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"<br>
-            <span style="font-size:0.95rem; color:#666; display:block; margin-top:10px;">— Bhagavad Gita (Chapter 2, Verse 47)</span>
-            <span style="font-size:0.95rem; font-style:normal; display:block; margin-top:5px;">You have a beautiful right to focus entirely on your efforts, but the absolute ultimate outcome rests gracefully with the cosmic order. Let not the anxiety of the fruit disturb your present walk.</span>
-        </blockquote>
-    </div>
-    <div class="section">
-        <h2>Useful Gatherings & Shared Videos</h2>
-        <p>Here are a few quiet video logs that provide perspective on navigating life's heavy seasons:</p>
-        <ul class="video-list">
-            <li>🎥 <a href="https://youtube.com" target="_blank">Understanding the Nature of Free Will vs Destiny</a></li>
-            <li>🎥 <a href="https://youtube.com" target="_blank">How to Quiet the Mind During Planetary Transits</a></li>
-        </ul>
-    </div>
-    <footer style="margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 20px;">
-        <p>© 2026 SpritualSpace. All rights reserved.</p>
+
+    <footer>
+        <p>&copy; 2026 Spiritual Space. All Rights Reserved. | <a href="legal.html">Terms & Disclaimer</a></p>
     </footer>
-</div>
 </body>
 </html>
