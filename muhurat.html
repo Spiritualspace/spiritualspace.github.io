@@ -59,36 +59,58 @@
             ⏳ <strong>Delivery Format:</strong> Your verified localized auspicious time options will be formatted and emailed within <strong>3 to 5 days</strong>.
         </div>
 
-        <form action="https://formspree.io" method="POST">
-            <input type="hidden" name="_next" value="https://github.io">
+       <!-- REPLACE THE ENTIRE <form> BLOCK IN YOUR MUHURAT PAGE WITH THIS CODE -->
+<form action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+    
+    <!-- 1. ANTI-SPAM SETTINGS -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_blacklist" value="buy bitcoin, cheap SEO, crypto investment, casino">
 
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="_replyto" required>
-            </div>
-            <div class="form-group">
-                <label for="event_type">Nature of Event / Venture</label>
-                <select id="event_type" name="event_type">
-                    <option value="business">Business Launch / Shop Opening</option>
-                    <option value="marriage">Sacred Marriage Ceremony</option>
-                    <option value="griha_pravesh">Griha Pravesh (House Warming)</option>
-                    <option value="other">Other Auspicious Milestone</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date_range">Preferred Date Window / Time Frame</label>
-                <input type="text" id="date_range" name="date_range" required placeholder="e.g., Between Nov 1st and Nov 15th, 2026">
-            </div>
-            <div class="form-group">
-                <label for="location">Location where event takes place (City, State)</label>
-                <input type="text" id="location" name="location" required placeholder="Required for local sunrise/sunset calculations">
-            </div>
-            <button type="submit" class="btn-submit">Request Auspicious Calculation</button>
-        </form>
+    <!-- 2. DATA ROUTING & WEBHOOKS -->
+    <input type="hidden" name="_cc" value="partner@email.com, backup@email.com">
+    <input type="hidden" name="_webhook" value="https://yourdomain.co">
+
+    <!-- 3. EMAIL AESTHETICS & UX -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com">
+    <input type="hidden" name="_subject" value="✨ New Auspicious Muhurat Request ✨">
+    <input type="hidden" name="_template" value="table">
+
+    <!-- 4. VISIBLE VISITOR INPUT FIELDS -->
+    <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <!-- Updated name attribute to "email" for FormSubmit mapping -->
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="event_type">Nature of Event / Venture</label>
+        <select id="event_type" name="event_type">
+            <option value="business">Business Launch / Shop Opening</option>
+            <option value="marriage">Sacred Marriage Ceremony</option>
+            <option value="griha_pravesh">Griha Pravesh (House Warming)</option>
+            <option value="other">Other Auspicious Milestone</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="date_range">Preferred Date Window / Time Frame</label>
+        <input type="text" id="date_range" name="date_range" required placeholder="e.g., Between Nov 1st and Nov 15th, 2026">
+    </div>
+    
+    <div class="form-group">
+        <label for="location">Location where event takes place (City, State)</label>
+        <input type="text" id="location" name="location" required placeholder="Required for local sunrise/sunset calculations">
+    </div>
+    
+    <button type="submit" class="btn-submit">Request Auspicious Calculation</button>
+</form>
+
     </div>
 
     <footer>
