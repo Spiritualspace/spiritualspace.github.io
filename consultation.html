@@ -79,45 +79,64 @@
             🕊️ <strong>A Note on Our Process:</strong> To ensure your cosmic alignments are studied with deep meditation and focus, our collective will send a <strong>personally written letter to your inbox within 5 to 7 days</strong>.
         </div>
 
-        <!-- Replace YOUR_FORM_ID with your custom Formspree key -->
-        <form action="https://formspree.io" method="POST">
-            <!-- Ensure proper redirection path -->
-            <input type="hidden" name="_next" value="https://github.io">
+      <!-- REPLACE YOUR ENTIRE <form> BLOC FROM YOUR ORIGINAL FILE WITH THIS CODE -->
+<form action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+    
+    <!-- 1. ANTI-SPAM SETTINGS -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_blacklist" value="buy bitcoin, cheap SEO, crypto investment, casino">
 
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="_replyto" required>
-            </div>
-            
-            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                <div>
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div>
-                    <label for="tob">Exact Time of Birth</label>
-                    <input type="time" id="tob" name="tob" required>
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <label for="pob">Place of Birth</label>
-                <input type="text" id="pob" name="pob" required placeholder="City, State, Country">
-            </div>
-            
-            <div class="form-group">
-                <label for="questions">Your Questions</label>
-                <textarea id="questions" name="questions" rows="4" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn-submit">Submit Your Details</button>
-        </form>
+    <!-- 2. DATA ROUTING & WEBHOOKS -->
+    <input type="hidden" name="_cc" value="partner@email.com, backup@email.com">
+    <input type="hidden" name="_webhook" value="https://yourdomain.co">
+
+    <!-- 3. EMAIL AESTHETICS & UX -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com">
+    <input type="hidden" name="_subject" value="✨ New Sacred Chart Analysis Inquiry ✨">
+    <input type="hidden" name="_template" value="table">
+
+    <!-- 4. VISIBLE VISITOR INPUT FIELDS -->
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
     </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="tob">Exact Time of Birth</label>
+            <input type="time" id="tob" name="tob" required>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="pob">Place of Birth</label>
+        <input type="text" id="pob" name="pob" required placeholder="City, State, Country">
+    </div>
+
+    <!-- NEW ACCESSIBLE ATTACHMENT INTEGRATION FIELD -->
+    <div class="form-group">
+        <label for="attachment">Upload Birth Chart Documents / Images (Optional)</label>
+        <input type="file" id="attachment" name="attachment" style="padding: 7px;">
+    </div>
+    
+    <div class="form-group">
+        <label for="questions">Your Questions</label>
+        <textarea id="questions" name="questions" rows="4" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn-submit">Submit Your Details</button>
+</form>
+
 
     <footer>
         <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
