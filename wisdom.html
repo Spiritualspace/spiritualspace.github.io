@@ -3,45 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dakshina | SpritualSpace</title>
+    <title>Reflections | SpritualSpace</title>
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
         .container { max-width: 680px; margin: 0 auto; padding: 20px; }
-        nav { text-align: center; padding: 30px 0; border-bottom: 1px solid #e6e0d8; }
-        nav a { margin: 0 15px; text-decoration: none; color: #555; font-size: 0.95rem; font-weight: bold; }
+        nav { padding: 30px 0; border-bottom: 1px solid #e6e0d8; margin-bottom: 30px; }
+        nav a { text-decoration: none; color: #666; font-size: 0.95rem; font-weight: bold; }
         nav a:hover { color: #1a1a1a; }
-        header { text-align: center; padding: 50px 0 20px 0; }
+        header { text-align: center; padding: 30px 0; }
         h1 { font-size: 2rem; font-weight: 400; color: #1a1a1a; }
-        .payment-box { background: #fff; padding: 30px; border-radius: 6px; border: 1px solid #e6e0d8; text-align: center; margin-top: 20px; }
-        .qr-code { max-width: 200px; display: block; margin: 20px auto; border: 1px solid #ddd; padding: 10px; background: white; }
-        .btn { background-color: #4a5568; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 15px; }
-        .btn:hover { background-color: #2d3748; }
+        .subtitle { font-style: italic; color: #666; }
+        .section { margin: 40px 0; }
+        .widget-wrapper { background: #ffffff; padding: 15px; border-radius: 6px; border: 1px solid #e6e0d8; margin-top: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        blockquote { font-style: italic; border-left: 3px solid #d4c5b3; padding-left: 20px; color: #555; margin: 25px 0; }
+        .video-list { list-style: none; padding: 0; }
+        .video-list li { margin-bottom: 15px; background: white; padding: 15px; border: 1px solid #e6e0d8; border-radius: 4px; }
+        .video-list a { color: #4a5568; text-decoration: underline; font-weight: bold; }
     </style>
 </head>
 <body>
 <div class="container">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="consultation.html">Guidance</a>
-        <a href="muhurat.html">Timings</a>
-        <a href="wisdom.html">Reflections</a>
-        <a href="dakshina.html">Dakshina</a>
-    </nav>
+    <nav><a href="index.html">← Back to Home</a></nav>
     <header>
-        <h1>The Cycle of Giving</h1>
+        <h1>Daily Alignment & Ancient Rhythm</h1>
+        <p class="subtitle">Timeless roots and cosmic maps to guide your walk</p>
     </header>
-    <div class="payment-box">
-        <h3>Offer Dakshina (Within India)</h3>
-        <p>Scan this personal UPI QR code to contribute from your heart:</p>
-        
-        <!-- This will display your QR code image once uploaded to your repository -->
-        <img src="upi-qr.png" alt="Scan to pay via UPI" class="qr-code">
-        <p>UPI ID: <code>yourupiid@okaxis</code></p>
-        
-        <h3 style="margin-top: 50px;">International Seekers</h3>
-        <p>If you are contributing from outside India, you can safely use PayPal:</p>
-        <a href="https://paypal.me" class="btn" target="_blank">Contribute via PayPal</a>
+    <div class="section">
+        <h2>Aaj Ka Panchang (Today's Celestial Map)</h2>
+        <p>A quiet mapping of the day's planetary qualities, tracking current Tithi, Nakshatra, and sensitive time windows automatically.</p>
+        <div class="widget-wrapper">
+            <iframe src="https://asksoma.ai" title="Daily Vedic Panchang Widget" width="100%" height="760" loading="lazy" style="border:0; max-width:100%;"></iframe>
+        </div>
     </div>
+    <div class="section">
+        <h2>Reflections & Sanskrit Verses</h2>
+        <blockquote>
+            "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥"<br>
+            <span style="font-size:0.95rem; color:#666; display:block; margin-top:10px;">— Bhagavad Gita (Chapter 2, Verse 47)</span>
+            <span style="font-size:0.95rem; font-style:normal; display:block; margin-top:5px;">You have a beautiful right to focus entirely on your efforts, but the absolute ultimate outcome rests gracefully with the cosmic order. Let not the anxiety of the fruit disturb your present walk.</span>
+        </blockquote>
+    </div>
+    <div class="section">
+        <h2>Useful Gatherings & Shared Videos</h2>
+        <p>Here are a few quiet video logs that provide perspective on navigating life's heavy seasons:</p>
+        <ul class="video-list">
+            <li>🎥 <a href="https://youtube.com" target="_blank">Understanding the Nature of Free Will vs Destiny</a></li>
+            <li>🎥 <a href="https://youtube.com" target="_blank">How to Quiet the Mind During Planetary Transits</a></li>
+        </ul>
+    </div>
+    <footer style="margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 20px;">
+        <p>© 2026 SpritualSpace. All rights reserved.</p>
+    </footer>
 </div>
 </body>
 </html>
