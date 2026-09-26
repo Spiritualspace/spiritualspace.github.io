@@ -3,91 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chart Analysis | SpritualSpace</title>
+    <title>Muhurat Services | Spiritual Space</title>
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
-        .container { max-width: 680px; margin: 0 auto; padding: 20px; }
-        nav { text-align: center; padding: 30px 0; border-bottom: 1px solid #e6e0d8; }
-        nav a { margin: 0 15px; text-decoration: none; color: #555; font-size: 0.95rem; font-weight: bold; }
-        nav a:hover { color: #1a1a1a; }
-        header { text-align: center; padding: 50px 0 20px 0; }
-        h1 { font-size: 2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 10px; }
-        .subtitle { font-style: italic; color: #666; }
-        .section { margin: 30px 0; }
-        form { background: #ffffff; padding: 30px; border-radius: 6px; border: 1px solid #e6e0d8; margin-top: 20px; }
+        /* Core visual theme match */
+        :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; line-height: 1.6; }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 20px 0; }
+        .container { width: 85%; max-width: 650px; margin: 0 auto; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--accent-gold); text-decoration: none; }
+        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 20px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
+        h1 { font-family: 'Lora', serif; color: var(--accent-gold); text-align: center; margin-top: 40px; }
+        .form-desc { text-align: center; color: var(--text-muted); margin-bottom: 40px; }
+        form { background-color: var(--card-bg); padding: 35px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.1); }
         .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; font-weight: bold; font-size: 0.95rem; color: #333; }
-        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; font-size: 0.95rem; }
-        button { background-color: #4a5568; color: white; padding: 14px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; width: 100%; }
-        button:hover { background-color: #2d3748; }
-        footer { margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 20px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--accent-gold); }
+        input, select, textarea { width: 100%; padding: 12px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #0b132b; color: white; font-family: inherit; box-sizing: border-box; }
+        .btn-submit { background-color: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 12px 30px; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: all 0.3s; width: 100%; }
+        .btn-submit:hover { background-color: var(--accent-gold); color: var(--bg-color); }
+        footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: 60px; }
+        footer a { color: var(--text-muted); text-decoration: none; }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="consultation.html">Guidance</a>
-        <a href="muhurat.html">Timings</a>
-        <a href="wisdom.html">Reflections</a>
-        <a href="dakshina.html">Dakshina</a>
-    </nav>
-
     <header>
-        <h1>Mapping the Natal Chart</h1>
-        <p class="subtitle">A quiet analysis of your baseline cosmic blueprint</p>
+        <div class="container" style="max-width: 1100px;">
+            <nav>
+                <a href="index.html" class="logo">Spiritual Space</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="wisdom.html">Philosophy</a>
+                    <a href="consultation.html">Chart Analysis</a>
+                    <a href="muhurat.html" class="active">Muhurat</a>
+                    <a href="dakshina.html">Dakshina</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <div class="section">
-        <p>When you share your birth details, please know they are handled with total reverence and privacy. These numbers are metrics used solely to map out planetary tendencies and your active time cycles (<em>Mahadashas</em>).</p>
+    <div class="container">
+        <h1>Auspicious Muhurat Request</h1>
+        <p class="form-desc">Calculate specific Panchang alignments for your new beginnings.</p>
         
-        <p>To request a detailed, written analysis overview sent to your private inbox, please carefully fill out the parameters below:</p>
-
-        <!-- REPLACE THE URL IN ACTION WITH YOUR LIVE FORMSPREE LINK LATER -->
         <form action="https://formspree.io" method="POST">
             <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" name="name" required>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label>Your Email Address (For delivery)</label>
-                <input type="email" name="email" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" required>
             </div>
             <div class="form-group">
-                <label>Exact Date of Birth</label>
-                <input type="date" name="dob" required>
-            </div>
-            <div class="form-group">
-                <label>Exact Time of Birth (Please double-check AM/PM)</label>
-                <input type="text" name="tob" placeholder="e.g., 04:22 PM" required>
-            </div>
-            <div class="form-group">
-                <label>Place of Birth (City, State, Country)</label>
-                <input type="text" name="pob" placeholder="e.g., Mumbai, Maharashtra, India" required>
-            </div>
-            <div class="form-group">
-                <label>Primary Focus Area</label>
-                <select name="focus_area">
-                    <option value="General Alignment">General Life Pathway & Alignments</option>
-                    <option value="Career & Tendencies">Career Obstacles & Professional Growth</option>
-                    <option value="Relationships">Harmonizing Personal Relationships</option>
-                    <option value="Spiritual Walk">Inner Growth & Spiritual Practices</option>
+                <label for="event_type">Nature of Event / Venture</label>
+                <select id="event_type" name="event_type">
+                    <option value="business">Business Launch / Shop Opening</option>
+                    <option value="marriage">Sacred Marriage Ceremony</option>
+                    <option value="griha_pravesh">Griha Pravesh (House Warming)</option>
+                    <option value="other">Other Auspicious Milestone</option>
                 </select>
             </div>
             <div class="form-group">
-                <label>Your Story or Context (Optional)</label>
-                <textarea name="notes" rows="5" placeholder="If there is a particular season of life or question you are navigating right now, please share a brief note here..."></textarea>
+                <label for="date_range">Preferred Date Window / Time Frame</label>
+                <input type="text" id="date_range" name="date_range" required placeholder="e.g., Between Nov 1st and Nov 15th, 2026">
             </div>
-            <button type="submit">Submit Parameters Confidentially</button>
+            <div class="form-group">
+                <label for="location">Location where event takes place (City, State)</label>
+                <input type="text" id="location" name="location" required placeholder="Required for local sunrise/sunset calculations">
+            </div>
+            <button type="submit" class="btn-submit">Request Auspicious Calculation</button>
         </form>
     </div>
 
     <footer>
-        <p><strong>A Gentle Reminder:</strong> Vedic calculations illuminate paths, but free will and divine grace hold ultimate agency. Data is stored natively under individual authority.</p>
-        <p>© 2026 SpritualSpace. All rights reserved.</p>
+        <p>&copy; 2026 Spiritual Space. All Rights Reserved. | <a href="legal.html">Terms & Disclaimer</a></p>
     </footer>
-</div>
-
 </body>
 </html>
