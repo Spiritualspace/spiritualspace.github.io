@@ -7,39 +7,33 @@
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
         .container { max-width: 680px; margin: 0 auto; padding: 20px; }
-        nav { text-align: center; padding: 30px 0; border-bottom: 1px solid #e6e0d8; }
-        nav a { margin: 0 15px; text-decoration: none; color: #555; font-size: 0.95rem; font-weight: bold; }
+        nav { padding: 30px 0; border-bottom: 1px solid #e6e0d8; margin-bottom: 30px; }
+        nav a { text-decoration: none; color: #666; font-size: 0.95rem; font-weight: bold; }
         nav a:hover { color: #1a1a1a; }
-        header { text-align: center; padding: 50px 0 20px 0; }
+        header { text-align: center; padding: 30px 0; }
         h1 { font-size: 2rem; font-weight: 400; color: #1a1a1a; }
-        .payment-box { background: #fff; padding: 30px; border-radius: 6px; border: 1px solid #e6e0d8; text-align: center; margin-top: 20px; }
-        .qr-code { max-width: 200px; display: block; margin: 20px auto; border: 1px solid #ddd; padding: 10px; background: white; }
-        .btn { background-color: #4a5568; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 15px; }
+        .payment-box { background: #fff; padding: 40px 30px; border-radius: 6px; border: 1px solid #e6e0d8; text-align: center; margin-top: 20px; }
+        .qr-code { max-width: 220px; display: block; margin: 25px auto; border: 1px solid #ddd; padding: 10px; background: white; }
+        .btn { background-color: #4a5568; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 15px; font-size: 0.95rem; }
         .btn:hover { background-color: #2d3748; }
     </style>
 </head>
 <body>
 <div class="container">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="consultation.html">Guidance</a>
-        <a href="muhurat.html">Timings</a>
-        <a href="wisdom.html">Reflections</a>
-        <a href="dakshina.html">Dakshina</a>
-    </nav>
+    <nav><a href="index.html">← Back to Home</a></nav>
     <header>
         <h1>The Cycle of Giving</h1>
     </header>
     <div class="payment-box">
         <h3>Offer Dakshina (Within India)</h3>
-        <p>Scan this personal UPI QR code to contribute from your heart:</p>
+        <p>If you wish, you can scan this personal UPI QR code to contribute from your heart:</p>
         
-        <!-- This will display your QR code image once uploaded to your repository -->
-        <img src="upi-qr.png" alt="Scan to pay via UPI" class="qr-code">
-        <p>UPI ID: <code>yourupiid@okaxis</code></p>
+        <!-- This draws your image file safely -->
+        <img src="upi-qr.png" alt="UPI QR Code" class="qr-code">
+        <p style="margin-top:15px;">UPI ID: <code>yourupiid@okaxis</code></p>
         
-        <h3 style="margin-top: 50px;">International Seekers</h3>
-        <p>If you are contributing from outside India, you can safely use PayPal:</p>
+        <h3 style="margin-top: 50px; border-top: 1px solid #e6e0d8; padding-top: 40px;">International Seekers</h3>
+        <p>If you are contributing from outside India, you can safely use our global path via PayPal:</p>
         <a href="https://paypal.me" class="btn" target="_blank">Contribute via PayPal</a>
     </div>
 </div>
