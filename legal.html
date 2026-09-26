@@ -3,26 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Privacy | Spiritual Space</title>
+    <title>Terms & Disclaimer | Spiritual Space</title>
+    <!-- Google Fonts: Celestial, Sacred Typography -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; line-height: 1.6; }
-        header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 20px 0; }
-        .container { width: 85%; max-width: 800px; margin: 0 auto; }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--accent-gold); text-decoration: none; }
-        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 20px; }
-        h1, h2 { font-family: 'Lora', serif; color: var(--accent-gold); }
-        .legal-content { padding: 40px 0; font-size: 0.95rem; text-align: justify; }
-        footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: 60px; }
+        :root {
+            --cosmic-void: #050a18; /* Deep infinite cosmic night sky */
+            --sacred-card: rgba(28, 37, 65, 0.6); /* Translucent temple glassmorphism */
+            --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+        }
+        
+        body { 
+            font-family: 'Lora', serif; 
+            background-color: var(--cosmic-void); 
+            background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); 
+            background-size: 550px 550px;
+            color: #f6ebd0; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 2; 
+            letter-spacing: 0.05em; 
+        }
+        
+        .gold-ink { 
+            background: var(--gold-gradient); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            display: inline-block; 
+            filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3)); 
+        }
+        
+        header { 
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15); 
+            padding: 30px 0; 
+        }
+        
+        .container { 
+            width: 85%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        
+        .logo { 
+            font-family: 'Cinzel Decorative', serif; 
+            font-size: 1.8rem; 
+            text-decoration: none; 
+            font-weight: 600; 
+        }
+        
+        .nav-links a { 
+            font-family: 'Marcellus', serif; 
+            color: #faf9f6; 
+            text-decoration: none; 
+            margin-left: 30px; 
+            font-size: 0.95rem; 
+            text-transform: uppercase; 
+            letter-spacing: 0.18em; 
+            transition: all 0.3s; 
+        }
+        
+        .nav-links a:hover, .nav-links a.active { 
+            background: var(--gold-gradient); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-shadow: 0 0 10px rgba(252, 246, 186, 0.4); 
+        }
+        
+        .legal-content { 
+            max-width: 850px; 
+            margin: 80px auto; 
+            background-color: var(--sacred-card); 
+            backdrop-filter: blur(8px); 
+            -webkit-backdrop-filter: blur(8px); 
+            border: 1px solid rgba(212, 175, 55, 0.12); 
+            padding: 50px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4); 
+            text-align: justify; 
+            font-size: 1.05rem; 
+        }
+        
+        h1, h2 { 
+            font-family: 'Cinzel Decorative', serif; 
+            margin-bottom: 25px; 
+        }
+        
+        h1 { 
+            text-align: center; 
+            font-size: 2.4rem; 
+        }
+        
+        h2 { 
+            font-size: 1.4rem; 
+            margin-top: 40px; 
+            color: #ebd197; 
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            padding-bottom: 5px;
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 60px 0; 
+            font-family: 'Marcellus', serif; 
+            font-size: 0.85rem; 
+            color: #ebd197; 
+            border-top: 1px solid rgba(212, 175, 55, 0.15); 
+            margin-top: 100px; 
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container" style="max-width: 1100px;">
+        <div class="container">
             <nav>
-                <a href="index.html" class="logo">Spiritual Space</a>
+                <a href="index.html" class="logo gold-ink">Spiritual Space</a>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="wisdom.html">Philosophy</a>
@@ -35,27 +136,31 @@
     </header>
 
     <div class="container legal-content">
-        <h1>Astrological Disclaimer, Terms & Privacy Policy</h1>
+        <h1 class="gold-ink">Astrological Disclaimer & Terms</h1>
         <p>Welcome to Spiritual Space. By accessing this platform and seeking astrological insights, you humbly understand and agree to the subsequent principles:</p>
         
         <h2>1. Nature of Astrology</h2>
         <p>Vedic Astrology (Jyotish) is an ancient interpretative art form designed for self-reflection and spiritual contemplation. Any insights shared on this portal—whether regarding lifestyle paths, timeline indicators, or vocational trends—reflect personal observations rooted in historical texts and do not present immutable or absolute guarantees.</p>
 
         <h2>2. Non-Professional Advice</h2>
-        <p>The guidance provided through our chart mappings or auspicious timing checks is never meant to replace professional medical, financial, psychiatric, legal, or occupational diagnostics. If you are experiencing serious health, psychological, or critical financial difficulties, you must consult qualified licensed experts immediately.</p>
+        <p>The guidance provided through our chart mappings or auspicious timing checks is never meant to replace professional medical, financial, psychiatric, legal, or occupational diagnostics. If you are experiencing serious health, psychological, or critical financial difficulties, we humbly encourage you to seek the immediate care of licensed experts.</p>
 
-        <h2>3. Age Restrictions</h2>
-        <p>By submitting a request for calculation or insight on our form directories, you explicitly represent and confirm that you are at least <strong>18 years of age</strong> or accessing this site under the direct supervision of a legal guardian.</p>
+        <h2>3. Age Criteria & Restrictions</h2>
+        <p>This quiet portal is dedicated to the mature contemplation of life pathways. By sharing your birth coordinates with us, you gently confirm that you have crossed eighteen years of life, or that you are exploring these charts under the loving, direct guidance of a parent or guardian.</p>
 
-        <h2>4. Data Protection & Privacy Policy</h2>
-        <p>We treat your birth information (Full Name, Date, Time, and Location of birth) as strictly sacred and confidential. These parameters are fed exclusively into calculations to generate your analysis. Your details are processed safely, are never sold or shared with external marketing bodies, and remain bound to private correspondence channels.</p>
+        <h2>4. Data Protection & Sacred Privacy</h2>
+        <p>We treat your birth information—your name, date, and coordinates of birth—as a sacred trust. These details are used exclusively by our collective of friends to manually map your configurations. Your information resides safely in our quiet correspondence channels; it is never shared, sold, or brought into commercial spheres.</p>
 
-        <h2>5. Personal Responsibility & Dakshina</h2>
-        <p>Any action or choice you execute based on information delivered via this portal is entirely under your personal accountability. Any funds exchanged via the voluntary Dakshina system are offered purely at the seeker's free will to keep this platform running, and are non-refundable.</p>
+        <h2>5. Personal Responsibility</h2>
+        <p>Any action or choice you execute based on information delivered via this portal is entirely under your personal accountability. Spiritual Space is not responsible for direct or accidental outcomes linked to your choices.</p>
+
+        <h2>6. Voluntary Contribution Data</h2>
+        <p>Any funds exchanged via the Dakshina system are offered purely at the seeker's free will to keep this platform running. Contributions are non-refundable.</p>
     </div>
 
     <footer>
-        <p>&copy; 2026 Spiritual Space. All Rights Reserved.</p>
+        <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
     </footer>
+
 </body>
 </html>
