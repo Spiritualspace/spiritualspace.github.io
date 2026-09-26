@@ -6,20 +6,24 @@
     <title>Thank You | Spiritual Space</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
-        .box { background-color: var(--card-bg); padding: 40px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.15); max-width: 500px; width: 90%; }
-        h1 { font-family: 'Lora', serif; color: var(--accent-gold); margin-bottom: 15px; }
-        p { color: #dfdfdf; font-size: 1rem; margin-bottom: 30px; }
-        .back-link { display: inline-block; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); padding: 10px 20px; border-radius: 4px; font-size: 0.9rem; transition: all 0.3s; }
-        .back-link:hover { background-color: var(--accent-gold); color: var(--bg-color); }
+        :root {
+            --cosmic-void: #050a18;
+            --sacred-card: rgba(28, 37, 65, 0.7);
+            --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+        }
+        body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        .box { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 50px 40px; border-radius: 16px; border: 1px solid rgba(212, 175, 55, 0.15); max-width: 550px; width: 90%; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+        .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3)); font-family: 'Cinzel Decorative', serif; font-size: 2rem; margin-bottom: 20px; }
+        p { color: #f3e9dc; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8; }
+        .back-link { display: inline-block; font-family: 'Marcellus', serif; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 12px 30px; border-radius: 4px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; text-decoration: none; transition: all 0.4s; }
+        .back-link:hover { border-color: #fcf6ba; box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.2), 0 0 15px rgba(212, 175, 55, 0.2); }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>Details Received Humbly</h1>
-        <p>Thank you for placing your trust in this space. Your information has arrived safely. Our collective will study your planetary alignments with deep care, meditation, and focus, and we will write back to your inbox very soon.</p>
-        <p style="font-family: 'Lora', serif; font-style: italic; color: var(--text-muted); font-size: 0.95rem;">"May deep peace, cosmic light, and absolute clarity guide your footsteps always."</p>
+        <h1 class="gold-ink">Details Received Humbly</h1>
+        <p>Thank you for placing your trust in this space. Your birth data has been securely and quietly routed to our dashboard. We will study the alignments carefully and reach out to your inbox soon.</p>
+        <p style="font-style: italic; color: #ebd197; font-size: 1rem; margin-bottom: 35px;">"May peace, cosmic light, and absolute clarity guide your footsteps always."</p>
         <a href="index.html" class="back-link">Return to Home</a>
     </div>
 </body>
