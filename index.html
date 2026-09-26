@@ -7,43 +7,88 @@
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
         .container { max-width: 680px; margin: 0 auto; padding: 20px; }
-        nav { text-align: center; padding: 30px 0; border-bottom: 1px solid #e6e0d8; }
-        nav a { margin: 0 15px; text-decoration: none; color: #555; font-size: 0.95rem; font-weight: bold; }
-        nav a:hover { color: #1a1a1a; }
-        header { text-align: center; padding: 60px 0 30px 0; }
-        h1 { font-size: 2.2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 10px; }
-        .subtitle { font-style: italic; color: #666; }
-        .section { margin: 40px 0; }
-        footer { margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 20px; }
+        
+        /* Peaceful Minimalist Header */
+        header { text-align: center; padding: 60px 0 20px 0; }
+        h1 { font-size: 2.4rem; font-weight: 400; color: #1a1a1a; margin-bottom: 12px; }
+        .subtitle { font-style: italic; color: #666; font-size: 1.05rem; }
+        .divider { width: 60px; height: 1px; background-color: #d4c5b3; margin: 30px auto; }
+        
+        .section { margin: 30px 0; font-size: 1.05rem; color: #333; }
+        p { margin-bottom: 24px; }
+        
+        /* Soulful Button Blocks */
+        .card-container { display: flex; flex-direction: column; gap: 20px; margin: 40px 0; }
+        .space-card { 
+            background: #ffffff; 
+            padding: 30px; 
+            border-radius: 6px; 
+            border: 1px solid #e6e0d8; 
+            text-decoration: none; 
+            color: inherit; 
+            transition: all 0.3s ease;
+            display: block;
+        }
+        .space-card:hover { 
+            border-color: #bfae99; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02); 
+        }
+        .card-title { font-size: 1.3rem; color: #1a1a1a; margin: 0 0 8px 0; font-weight: normal; }
+        .card-desc { color: #666; font-size: 0.95rem; margin: 0; }
+        
+        footer { margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 30px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="consultation.html">Guidance</a>
-        <a href="muhurat.html">Timings</a>
-        <a href="wisdom.html">Reflections</a>
-        <a href="dakshina.html">Dakshina</a>
-    </nav>
 
     <header>
         <h1>The Universe Moves in Silence</h1>
-        <p class="subtitle">A space for Vedic reflection and seasonal alignment</p>
+        <p class="subtitle">A quiet room for timeless Vedic reflection and natural alignment</p>
+        <div class="divider"></div>
     </header>
 
     <div class="section">
-        <p>Nature operates on a profound, quiet rhythm. The movements of the stars do not force us; they simply hum a cosmic melody, offering a map of tendencies for our journey here.</p>
-        <p>Use the menu above to request a gentle layout, discover beautiful timings for your next venture, or explore shared wisdom as you walk your path.</p>
+        <p>Nature operates on a profound, quiet rhythm. The river never rushes its journey, yet it always reaches the ocean. The movements of the stars are no different; they do not force us, but simply hum a cosmic melody, offering a map of tendencies for our life walk.</p>
+        <p>Welcome to this unhurried corner of the internet. If you are seeking fixed future predictions, you may not find them here. But if you wish to understand the energetic seasons of your life or find a balanced moment to begin a new journey, you are warmly invited to step inside.</p>
+    </div>
+
+    <!-- REFINED TEXT AND BUTTON CARDS -->
+    <div class="card-container">
+        
+        <!-- Open Door 1: Consultation Form -->
+        <a href="consultation.html" class="space-card">
+            <h3 class="card-title">Request Personal Guidance →</h3>
+            <p class="card-desc">Share your parameters securely. Let us sit quietly with your charts to map out your underlying planetary tendencies and active cycles.</p>
+        </a>
+
+        <!-- Open Door 2: Daily Calendar Widget -->
+        <a href="wisdom.html" class="space-card">
+            <h3 class="card-title">View Today's Celestial Map →</h3>
+            <p class="card-desc">An interactive, auto-updating daily calendar mapping out the current Tithi, Nakshatras, and cosmic intervals for your daily alignment.</p>
+        </a>
+
+        <!-- Open Door 3: Shubh Muhurat Time -->
+        <a href="muhurat.html" class="space-card">
+            <h3 class="card-title">Discover Auspicious Beginnings →</h3>
+            <p class="card-desc">A completely complimentary space to help you align your vital new life milestones with the natural supportive cycles of time.</p>
+        </a>
+
+        <!-- Open Door 4: Sacred Notes & YouTube Video Links -->
+        <a href="dakshina.html" class="space-card">
+            <h3 class="card-title">The Cycle of Giving & Support →</h3>
+            <p class="card-desc">If a reflection has brought peace or clarity to your path, you are welcome to offer your Dakshina or support the continuous maintenance of this sanctuary.</p>
+        </a>
+
     </div>
 
     <footer>
-        <p><strong>Spiritual Insights:</strong> Everything shared here is an interpretation of ancient Vedic principles shared in good faith. Potentials are highlighted, but absolute outcomes rest with the Divine.</p>
-        <p>© 2026 SpritualSpace. All rights reserved.</p>
+        <p><strong>A True Reflection:</strong> Everything shared here represents time-honored Vedic principles interpreted in good faith. Potentials are highlighted, but the ultimate layout of destiny rests beautifully with Divine Grace.</p>
+        <p>© 2026 SpritualSpace. All data self-governed natively under individual authority.</p>
     </footer>
 </div>
 
 </body>
 </html>
-
