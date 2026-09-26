@@ -14,42 +14,37 @@
         body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; line-height: 1.7; letter-spacing: 0.04em; }
         .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 4px rgba(212, 175, 55, 0.3)); }
         header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 15px 0; }
-       .container { width: 85%; max-width: 1200px; margin: 0 auto; }
+        
+        /* MATCHED TO MUHURAT PAGE BOUNDS */
+        .container { width: 90%; max-width: 650px; margin: 0 auto; }
+        
         nav { display: flex; justify-content: space-between; align-items: center; }
         .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.5rem; text-decoration: none; font-weight: 600; }
-       .nav-links a { 
-    font-family: 'Marcellus', serif; 
-    color: #faf9f6; 
-    text-decoration: none; 
-    margin-left: 25px; 
-    font-size: 0.9rem; 
-    text-transform: uppercase; 
-    letter-spacing: 0.15em; 
-    display: inline-block; /* <-- ADD THIS LINE TO FIX HOVER GRAPHICS */
-    transition: all 0.3s;  /* <-- ADD THIS TO MATCH YOUR PHILOSOPHY SMOOTHNESS */
-}
+        
+        /* SYNCHRONIZED NAV LINK PROPERTIES WITH INLINE-BLOCK PROTECTION */
+        .nav-links a { 
+            font-family: 'Marcellus', serif; 
+            color: #faf9f6; 
+            text-decoration: none; 
+            margin-left: 25px; 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            letter-spacing: 0.15em; 
+            display: inline-block;
+            transition: all 0.4s;
+        }
         .nav-links a:hover, .nav-links a.active { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
         h1 { font-family: 'Cinzel Decorative', serif; text-align: center; margin: 30px 0 10px 0; font-size: 2.2rem; }
         .form-desc { text-align: center; color: #ebd197; margin-bottom: 20px; font-size: 1rem; }
-        .operational-notice { background: rgba(191, 149, 63, 0.05); border: 1px dashed rgba(212, 175, 55, 0.3); padding: 15px; border-radius: 8px; margin-bottom: 25px; font-size: 0.9rem; text-align: center; color: #fbf5b7; }
         
-        form { 
-    background-color: var(--sacred-card); 
-    backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(8px); 
-    padding: 35px; 
-    border-radius: 12px; 
-    border: 1px solid rgba(212, 175, 55, 0.12); 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4); 
-    
-    /* ADD THESE TWO LINES TO FIX THE STRETCHING */
-    max-width: 800px;   /* Prevents the form from expanding edge-to-edge */
-    margin: 0 auto;     /* Centers the form box perfectly on the screen */
-}
+        /* MATCHED TO MUHURAT OPERATIONAL NOTICE VIEW */
+        .operational-notice { background: rgba(191, 149, 63, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); padding: 15px; border-radius: 8px; margin-bottom: 25px; font-size: 0.9rem; text-align: center; color: #dfdfdf; }
+        
+        form { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 35px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
         .form-group { margin-bottom: 18px; }
         label { display: block; margin-bottom: 6px; font-family: 'Marcellus', serif; font-size: 0.9rem; color: #ebd197; }
-        input, select, textarea { width: 100%; padding: 11px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; font-size: 0.95rem; }
+        input, select, textarea { width: 100%; padding: 11px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; }
         
         .btn-submit { font-family: 'Marcellus', serif; background: transparent; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 12px; border-radius: 4px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; cursor: pointer; transition: all 0.4s; width: 100%; margin-top: 10px; }
         .btn-submit:hover { border-color: #fcf6ba; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
@@ -58,6 +53,7 @@
 </head>
 <body>
     <header>
+        <!-- Retained max-width: 1200px ONLY on header container to allow full bar expansion -->
         <div class="container" style="max-width: 1200px;">
             <nav>
                 <a href="index.html" class="logo gold-ink">Spiritual Space</a>
@@ -72,27 +68,59 @@
         </div>
     </header>
 
-    <div class="container"><center>
-        <h1 class="gold-ink">Seek Chart Analysis</h1></center>
-        <p class="form-desc">Please share your precise birth alignments. Your data remains entirely sacred and private.</p>
+    <!-- This container will now scale down safely to 650px just like Muhurat page -->
+    <div class="container">
+        <center>
+            <h1 class="gold-ink">Seek Chart Analysis</h1>
+            <p class="form-desc">Please share your precise birth alignments. Your data remains entirely sacred and private.</p>
+        </center>
         
         <div class="operational-notice">
             🕊️ <strong>A Note on Our Process:</strong> To ensure your cosmic alignments are studied with deep meditation and focus, our collective will send a <strong>personally written letter to your inbox within 5 to 7 days</strong>.
         </div>
 
+        <!-- Replace YOUR_FORM_ID with your custom Formspree key -->
         <form action="https://formspree.io" method="POST">
+            <!-- Ensure proper redirection path -->
             <input type="hidden" name="_next" value="https://github.io">
-            <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
-            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="_replyto" required></div>
-            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                <div><label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required></div>
-                <div><label for="tob">Exact Time of Birth</label><input type="time" id="tob" name="tob" required></div>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-group"><label for="pob">Place of Birth</label><input type="text" id="pob" name="pob" required placeholder="City, State, Country"></div>
-            <div class="form-group"><label for="questions">Your Questions</label><textarea id="questions" name="questions" rows="4" required></textarea></div>
-            <button type="submit" class="btn-submit">Submit Your Details </button>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="tob">Exact Time of Birth</label>
+                    <input type="time" id="tob" name="tob" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="pob">Place of Birth</label>
+                <input type="text" id="pob" name="pob" required placeholder="City, State, Country">
+            </div>
+            
+            <div class="form-group">
+                <label for="questions">Your Questions</label>
+                <textarea id="questions" name="questions" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Submit Your Details</button>
         </form>
     </div>
-    <footer><p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p></footer>
+
+    <footer>
+        <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
+    </footer>
 </body>
 </html>
