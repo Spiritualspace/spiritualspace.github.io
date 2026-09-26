@@ -34,7 +34,19 @@
         .form-desc { text-align: center; color: #ebd197; margin-bottom: 20px; font-size: 1rem; }
         .operational-notice { background: rgba(191, 149, 63, 0.05); border: 1px dashed rgba(212, 175, 55, 0.3); padding: 15px; border-radius: 8px; margin-bottom: 25px; font-size: 0.9rem; text-align: center; color: #fbf5b7; }
         
-        form { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 35px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+        form { 
+    background-color: var(--sacred-card); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    padding: 35px; 
+    border-radius: 12px; 
+    border: 1px solid rgba(212, 175, 55, 0.12); 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4); 
+    
+    /* ADD THESE TWO LINES TO FIX THE STRETCHING */
+    max-width: 800px;   /* Prevents the form from expanding edge-to-edge */
+    margin: 0 auto;     /* Centers the form box perfectly on the screen */
+}
         .form-group { margin-bottom: 18px; }
         label { display: block; margin-bottom: 6px; font-family: 'Marcellus', serif; font-size: 0.9rem; color: #ebd197; }
         input, select, textarea { width: 100%; padding: 11px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; font-size: 0.95rem; }
