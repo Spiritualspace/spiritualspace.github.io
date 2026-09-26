@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Analysis | SpritualSpace</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2c2c; background-color: #faf8f5; margin: 0; padding: 0; }
+        .container { max-width: 680px; margin: 0 auto; padding: 20px; }
+        nav { text-align: center; padding: 30px 0; border-bottom: 1px solid #e6e0d8; }
+        nav a { margin: 0 15px; text-decoration: none; color: #555; font-size: 0.95rem; font-weight: bold; }
+        nav a:hover { color: #1a1a1a; }
+        header { text-align: center; padding: 50px 0 20px 0; }
+        h1 { font-size: 2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 10px; }
+        .subtitle { font-style: italic; color: #666; }
+        .section { margin: 30px 0; }
+        form { background: #ffffff; padding: 30px; border-radius: 6px; border: 1px solid #e6e0d8; margin-top: 20px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; font-size: 0.95rem; color: #333; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; font-size: 0.95rem; }
+        button { background-color: #4a5568; color: white; padding: 14px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; width: 100%; }
+        button:hover { background-color: #2d3748; }
+        footer { margin-top: 80px; text-align: center; font-size: 0.85rem; color: #777; border-top: 1px solid #e6e0d8; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="consultation.html">Guidance</a>
+        <a href="muhurat.html">Timings</a>
+        <a href="wisdom.html">Reflections</a>
+        <a href="dakshina.html">Dakshina</a>
+    </nav>
+
+    <header>
+        <h1>Mapping the Natal Chart</h1>
+        <p class="subtitle">A quiet analysis of your baseline cosmic blueprint</p>
+    </header>
+
+    <div class="section">
+        <p>When you share your birth details, please know they are handled with total reverence and privacy. These numbers are metrics used solely to map out planetary tendencies and your active time cycles (<em>Mahadashas</em>).</p>
+        
+        <p>To request a detailed, written analysis overview sent to your private inbox, please carefully fill out the parameters below:</p>
+
+        <!-- REPLACE THE URL IN ACTION WITH YOUR LIVE FORMSPREE LINK LATER -->
+        <form action="https://formspree.io" method="POST">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Your Email Address (For delivery)</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Exact Date of Birth</label>
+                <input type="date" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Exact Time of Birth (Please double-check AM/PM)</label>
+                <input type="text" name="tob" placeholder="e.g., 04:22 PM" required>
+            </div>
+            <div class="form-group">
+                <label>Place of Birth (City, State, Country)</label>
+                <input type="text" name="pob" placeholder="e.g., Mumbai, Maharashtra, India" required>
+            </div>
+            <div class="form-group">
+                <label>Primary Focus Area</label>
+                <select name="focus_area">
+                    <option value="General Alignment">General Life Pathway & Alignments</option>
+                    <option value="Career & Tendencies">Career Obstacles & Professional Growth</option>
+                    <option value="Relationships">Harmonizing Personal Relationships</option>
+                    <option value="Spiritual Walk">Inner Growth & Spiritual Practices</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Your Story or Context (Optional)</label>
+                <textarea name="notes" rows="5" placeholder="If there is a particular season of life or question you are navigating right now, please share a brief note here..."></textarea>
+            </div>
+            <button type="submit">Submit Parameters Confidentially</button>
+        </form>
+    </div>
+
+    <footer>
+        <p><strong>A Gentle Reminder:</strong> Vedic calculations illuminate paths, but free will and divine grace hold ultimate agency. Data is stored natively under individual authority.</p>
+        <p>© 2026 SpritualSpace. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
