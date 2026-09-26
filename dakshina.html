@@ -1,3 +1,12 @@
+Looking closely at your live dakshina.html screenshot [image_GIxdW8.png], the single-column layout is pushing everything too far down, forcing seekers to scroll unnecessarily.
+To resolve this congestion and fully integrate Indian payment systems (UPI QR Code, NetBanking) alongside your International options (PayPal, Stripe), we should structure this into a modern, compact two-column layout.
+
+* Left Side: Your sacred philosophy of Dakshina.
+* Right Side: A tight, visual payment sanctuary combining custom tabs or side-by-side buttons for domestic and international seekers.
+
+Here is your beautifully optimized, compact code for dakshina.html:
+## 💳 Page 5: Compact Divine Exchange (dakshina.html)
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,24 +20,119 @@
             --sacred-card: rgba(28, 37, 65, 0.6);
             --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
         }
-        body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; line-height: 2; letter-spacing: 0.05em; }
-        .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3)); }
-        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 30px 0; }
-        .container { width: 85%; max-width: 750px; margin: 0 auto; }
+        body { 
+            font-family: 'Lora', serif; 
+            background-color: var(--cosmic-void); 
+            background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); 
+            background-size: 550px 550px;
+            color: #f6ebd0; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.8; 
+            letter-spacing: 0.04em; 
+        }
+        .gold-ink { 
+            background: var(--gold-gradient); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            display: inline-block; 
+            filter: drop-shadow(0px 2px 4px rgba(212, 175, 55, 0.3)); 
+        }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 25px 0; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; text-decoration: none; font-weight: 600; }
-        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 30px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.18em; }
-        h1 { font-family: 'Cinzel Decorative', serif; text-align: center; margin-top: 60px; font-size: 2.5rem; }
-        .donation-box { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(212, 175, 55, 0.12); padding: 50px; border-radius: 16px; text-align: center; margin-top: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
-        .payment-methods { margin-top: 40px; }
-        .pay-btn { display: inline-block; font-family: 'Marcellus', serif; background: transparent; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 14px 40px; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.2em; border-radius: 4px; transition: all 0.4s; }
-        .pay-btn:hover { border-color: #fcf6ba; box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.2), 0 0 15px rgba(212, 175, 55, 0.2); text-shadow: 0 0 5px #fff; }
-        footer { text-align: center; padding: 60px 0; font-family: 'Marcellus', serif; font-size: 0.85rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 100px; }
+        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.6rem; text-decoration: none; font-weight: 600; }
+        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 25px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; }
+        
+        /* Master Grid to pull everything above the fold */
+        .dakshina-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            margin: 50px auto;
+            align-items: start;
+        }
+        
+        .philosophy-panel {
+            background-color: var(--sacred-card);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        }
+        
+        .donation-box {
+            background-color: rgba(11, 19, 43, 0.8);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 35px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        h1 { font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; margin-top: 0; text-align: center; margin-bottom: 30px; }
+        h2 { font-family: 'Cinzel Decorative', serif; font-size: 1.1rem; margin: 25px 0 15px 0; color: #ebd197; letter-spacing: 0.05em; }
+        
+        .quote { font-style: italic; color: #ebd197; font-size: 1.1rem; border-left: 2px solid #bf953f; padding-left: 15px; margin-bottom: 25px; }
+        
+        /* Payment Section Styling */
+        .qr-placeholder {
+            background: #fff;
+            padding: 15px;
+            width: 160px;
+            height: 160px;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .qr-placeholder img { width: 100%; height: 100%; object-fit: contain; }
+        
+        .pay-methods-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        
+        .pay-btn {
+            display: block;
+            font-family: 'Marcellus', serif;
+            background: transparent;
+            color: #faf6ba;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .pay-btn:hover {
+            border-color: #fcf6ba;
+            box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.2), 0 0 10px rgba(212, 175, 55, 0.2);
+            text-shadow: 0 0 3px #fff;
+        }
+        
+        .upi-text { font-family: 'Marcellus', serif; font-size: 0.85rem; color: #ebd197; margin-top: 5px; letter-spacing: 0.05em; }
+        
+        footer { text-align: center; padding: 40px 0; font-family: 'Marcellus', serif; font-size: 0.8rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 50px; }
+        
+        /* Responsive collapse for small screen tracking formats */
+        @media (max-width: 900px) {
+            .dakshina-grid { grid-template-columns: 1fr; gap: 30px; margin: 20px auto; }
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container" style="max-width: 1200px;">
+        <div class="container">
             <nav>
                 <a href="index.html" class="logo gold-ink">Spiritual Space</a>
                 <div class="nav-links">
@@ -43,28 +147,55 @@
     </header>
 
     <div class="container">
-        <h1 class="gold-ink">A Note on Our Exchange (Dakshina & Donations)</h1>
-        
-        <div class="donation-box">
-            <p style="font-family: 'Lora', serif; font-style: italic; font-size: 1.2rem; color: #ebd197;">
-                "In alignment with ancient spiritual principles, spiritual insight is a gift meant to be shared, not commercialised."
-            </p>
-            <p style="text-align: justify; font-size: 1.05rem; margin-top: 30px; color: #dfdfdf;">
-                Therefore, we do not charge fixed, professional fees for our readings. This space runs entirely on a <strong>voluntary donation (Dakshina) basis</strong>. 
-            </p>
-            <p style="text-align: justify; font-size: 1.05rem; color: #dfdfdf; margin-bottom: 40px;">
-                If you find value, peace, or clarity through your reading, you are welcome to contribute whatever your heart guides you to, helping us maintain this platform and continue serving seekers. Your intent and kindness matter far more than the amount.
-            </p>
+        <div class="dakshina-grid">
             
-            <div class="payment-methods">
-                <a href="https://paypal.me" target="_blank" class="pay-btn">Support Our Space / Donate</a>
+            <!-- Left Panel: Philosophy Copy -->
+            <div class="philosophy-panel">
+                <h1 class="gold-ink">The Spirit of Dakshina</h1>
+                <div class="quote">
+                    "In alignment with ancient spiritual principles, spiritual insight is a gift meant to be shared, not commercialised."
+                </div>
+                <p>Therefore, we do not charge fixed, professional fees for our readings. This space runs entirely on a voluntary donation (Dakshina) basis.</p>
+                <p>If you find value, peace, or clarity through your reading, you are welcome to contribute whatever your heart guides you to, helping us maintain this platform and continue serving seekers. Your intent and kindness matter far more than the amount.</p>
             </div>
-            <p style="font-size: 0.85rem; color: #a5a5a5; margin-top: 20px; font-family: 'Marcellus', serif; letter-spacing: 0.05em;">Secure external routing via trusted pathways.</p>
+            
+            <!-- Right Panel: Combined Indian & Global Payment Portals -->
+            <div class="donation-box">
+                <h1 class="gold-ink" style="font-size: 1.5rem; margin-bottom: 15px;">Sacred Offerings</h1>
+                
+                <!-- Domestic Indian Channels -->
+                <h2>Indian Gateways (Free / UPI)</h2>
+                <div class="qr-placeholder">
+                    <!-- Replace with your actual UPI QR code image path later -->
+                    <img src="upi-qr-placeholder.png" alt="Scan to Pay via UPI">
+                </div>
+                <div class="upi-text">UPI ID: <span style="color: #fff;">yourvpa@upi</span></div>
+                
+                <div class="pay-methods-group">
+                    <!-- Razorpay / Instamojo Payment Link Endpoint -->
+                    <a href="https://rzp.io" target="_blank" class="pay-btn">Indian NetBanking / Cards</a>
+                </div>
+                
+                <!-- Global Pathways -->
+                <h2>International Gateways</h2>
+                <div class="pay-methods-group">
+                    <a href="https://paypal.me" target="_blank" class="pay-btn">Contribute via PayPal</a>
+                    <!-- Stripe Checkout Link Endpoint -->
+                    <a href="https://stripe.com" target="_blank" class="pay-btn">Contribute via Stripe</a>
+                </div>
+                
+                <p style="font-size: 0.75rem; color: #a5a5a5; margin-top: 25px; font-family: 'Marcellus', serif;">Secure external execution pathways.</p>
+            </div>
+            
         </div>
     </div>
 
     <footer>
         <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
     </footer>
+
 </body>
 </html>
+
+This two-column layout fits perfectly on desktop screens without requiring excessive scrolling! To complete this page, do you need help generating a clean, high-resolution UPI QR code image to replace the placeholder, or should we look at setting up your Stripe/Razorpay links? Let me know your next step!
+
