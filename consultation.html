@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chart Consultation | Spiritual Space</title>
+    <title>Chart Analysis | Spiritual Space</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --bg-color: #0b132b; --card-bg: #1c2541; --accent-gold: #d4af37; --text-light: #faf9f6; --text-muted: #a5a5a5; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-light); margin: 0; padding: 0; line-height: 1.6; }
-        header { border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 20px 0; }
-        .container { width: 85%; max-width: 650px; margin: 0 auto; }
+        :root {
+            --cosmic-void: #050a18;
+            --sacred-card: rgba(28, 37, 65, 0.6);
+            --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+        }
+        body { font-family: 'Lora', serif; background-color: var(--cosmic-void); background-image: radial-gradient(white, rgba(255,255,255,.02) 2px, transparent 40px); color: #f6ebd0; margin: 0; padding: 0; line-height: 1.9; letter-spacing: 0.05em; }
+        .gold-ink { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.3)); }
+        header { border-bottom: 1px solid rgba(212, 175, 55, 0.15); padding: 30px 0; }
+        .container { width: 85%; max-width: 700px; margin: 0 auto; }
         nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--accent-gold); text-decoration: none; }
-        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 20px; }
-        .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
-        h1 { font-family: 'Lora', serif; color: var(--accent-gold); text-align: center; margin-top: 40px; margin-bottom: 10px; }
-        .form-desc { text-align: center; color: var(--text-muted); margin-bottom: 30px; font-size: 0.95rem; }
-        .meta-notice { background: rgba(212, 175, 55, 0.08); border: 1px dashed var(--accent-gold); padding: 15px; border-radius: 6px; margin-bottom: 30px; font-size: 0.88rem; text-align: center; color: #dfdfdf; }
-        form { background-color: var(--card-bg); padding: 35px; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.1); }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--accent-gold); }
-        input, select, textarea { width: 100%; padding: 12px; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #0b132b; color: white; font-family: inherit; box-sizing: border-box; }
-        input:focus, select:focus, textarea:focus { border-color: var(--accent-gold); outline: none; }
-        .btn-submit { background-color: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 12px 30px; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: all 0.3s; width: 100%; margin-top: 10px; }
-        .btn-submit:hover { background-color: var(--accent-gold); color: var(--bg-color); }
-        footer { text-align: center; padding: 40px 0; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid rgba(212, 175, 55, 0.1); margin-top: 60px; }
-        footer a { color: var(--text-muted); text-decoration: none; }
+        .logo { font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; text-decoration: none; font-weight: 600; }
+        .nav-links a { font-family: 'Marcellus', serif; color: #faf9f6; text-decoration: none; margin-left: 30px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.18em; }
+        .nav-links a:hover, .nav-links a.active { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { font-family: 'Cinzel Decorative', serif; text-align: center; margin-top: 60px; font-size: 2.5rem; }
+        .form-desc { text-align: center; color: #ebd197; margin-bottom: 40px; font-size: 1.05rem; }
+        form { background-color: var(--sacred-card); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 45px; border-radius: 16px; border: 1px solid rgba(212, 175, 55, 0.12); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+        .form-group { margin-bottom: 25px; }
+        label { display: block; margin-bottom: 10px; font-family: 'Marcellus', serif; font-size: 0.95rem; color: #ebd197; letter-spacing: 0.1em; }
+        input, select, textarea { width: 100%; padding: 14px; border-radius: 6px; border: 1px solid rgba(212, 175, 55, 0.2); background-color: #050a18; color: white; font-family: inherit; box-sizing: border-box; font-size: 1rem; }
+        input:focus, select:focus, textarea:focus { border-color: #fcf6ba; outline: none; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+        .btn-submit { font-family: 'Marcellus', serif; background: transparent; color: #faf6ba; border: 1px solid rgba(212, 175, 55, 0.5); padding: 14px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.2em; cursor: pointer; transition: all 0.4s; width: 100%; margin-top: 15px; }
+        .btn-submit:hover { border-color: #fcf6ba; box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.2), 0 0 15px rgba(212, 175, 55, 0.2); text-shadow: 0 0 5px #fff; }
+        footer { text-align: center; padding: 60px 0; font-family: 'Marcellus', serif; font-size: 0.85rem; color: #ebd197; border-top: 1px solid rgba(212, 175, 55, 0.15); margin-top: 100px; }
     </style>
 </head>
 <body>
     <header>
-        <div class="container" style="max-width: 1100px;">
+        <div class="container" style="max-width: 1200px;">
             <nav>
-                <a href="index.html" class="logo">Spiritual Space</a>
+                <a href="index.html" class="logo gold-ink">Spiritual Space</a>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="wisdom.html">Philosophy</a>
@@ -45,16 +48,10 @@
     </header>
 
     <div class="container">
-        <h1>Seek Chart Analysis</h1>
+        <h1 class="gold-ink">Seek Chart Analysis</h1>
         <p class="form-desc">Please share your precise birth alignments. Your data remains entirely sacred and private.</p>
         
-        <div class="meta-notice">
-            🕊️ <strong>Operational Guidance:</strong> All comprehensive analyses are prepared with deep reverence and delivered directly to your inbox as a <strong>detailed written response</strong> within <strong>5 to 7 days</strong>.
-        </div>
-
-        <!-- Replace your_formspree_id with your real Formspree endpoint -->
         <form action="https://formspree.io" method="POST">
-            <!-- Formspree redirection rule to stay on your site -->
             <input type="hidden" name="_next" value="https://github.io">
             
             <div class="form-group">
@@ -88,7 +85,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Spiritual Space. All Rights Reserved. | <a href="legal.html">Terms, Disclaimer & Privacy Policy</a></p>
+        <p class="gold-ink">&copy; 2026 Spiritual Space. Offered humbly in service to society.</p>
     </footer>
 </body>
 </html>
