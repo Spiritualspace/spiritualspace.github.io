@@ -81,15 +81,14 @@
 
       <!-- REPLACE YOUR ENTIRE <form> BLOC FROM YOUR ORIGINAL FILE WITH THIS CODE -->
 <form action="https://formsubmit.co/spritualspace.team@gmail.com" method="POST" enctype="multipart/form-data">
-    
+
     <!-- 1. ANTI-SPAM SETTINGS -->
     <input type="text" name="_honey" style="display:none">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_blacklist" value="buy bitcoin, cheap SEO, crypto investment, casino">
 
-    <!-- 2. DATA ROUTING & WEBHOOKS -->
-    <input type="hidden" name="_cc" value="Soumallyanandy11@gmail.com; nehay145@gmail.com; backup@email.com">
-    <input type="hidden" name="_webhook" value="https://yoursite.com">
+    <!-- 2. DATA ROUTING (Fixed semicolons to commas, removed broken webhook) -->
+    <input type="hidden" name="_cc" value="Soumallyanandy11@gmail.com, nehay145@gmail.com, backup@email.com">
 
     <!-- 3. EMAIL AESTHETICS & UX -->
     <input type="hidden" name="_next" value="https://spiritualspace.github.io/thankyou.html">
@@ -101,12 +100,12 @@
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" required>
     </div>
-    
+
     <div class="form-group">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required>
     </div>
-    
+
     <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
         <div>
             <label for="dob">Date of Birth</label>
@@ -117,23 +116,23 @@
             <input type="time" id="tob" name="tob" required>
         </div>
     </div>
-    
+
     <div class="form-group">
         <label for="pob">Place of Birth</label>
         <input type="text" id="pob" name="pob" required placeholder="City, State, Country">
     </div>
 
-    <!-- NEW ACCESSIBLE ATTACHMENT INTEGRATION FIELD -->
+    <!-- ATTACHMENT INTEGRATION FIELD -->
     <div class="form-group">
         <label for="attachment">Upload Birth Chart Documents / Images (Optional)</label>
         <input type="file" id="attachment" name="attachment" style="padding: 7px;">
     </div>
-    
+
     <div class="form-group">
         <label for="questions">Your Questions</label>
         <textarea id="questions" name="questions" rows="4" required></textarea>
     </div>
-    
+
     <button type="submit" class="btn-submit">Submit Your Details</button>
 </form>
 
