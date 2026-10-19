@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Chants | Spiritual Space</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #d4af37;
+            --text-muted: #666666;
+            --bg-light: #fcfcfc;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Top Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        header .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        header nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        header nav a:hover, header nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 2.4rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 20px auto;
+        }
+
+        /* Texts Grid Layout */
+        .library-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Dynamic Book Card */
+        .book-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+        }
+
+        .book-tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .book-title {
+            font-size: 1.4rem;
+            margin: 10px 0 5px 0;
+            color: var(--primary-color);
+        }
+
+        .book-subtitle {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .book-description {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .book-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .book-btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Future placeholder slot card */
+        .placeholder-card {
+            border: 1px dashed #cccccc;
+            border-radius: 8px;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Spiritual Space</a>
+        <nav>
+            <a href="index.html">Wisdom</a>
+            <a href="sacred-chants.html" class="active">Sacred Chants</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="page-header">
+            <h1>Sacred Chants & Wisdom</h1>
+            <p>"Vani becomes sacred when it sings the praise of the Divine."</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="library-grid">
+            
+            <!-- Current Book: Lalita Sahasranama -->
+            <div class="book-card">
+                <div>
+                    <span class="book-tag">Stotra & Meaning</span>
+                    <h3 class="book-title">श्री ललिता सहस्रनाम</h3>
+                    <p class="book-subtitle">The Thousand Names of the Divine Mother</p>
+                    <p class="book-description">
+                        Dive into the deep spiritual Hindi meanings, structure, and cosmic significance of the 1,000 sacred names of Goddess Tripura Sundari. Derived directly from the Brahmanda Purana.
+                    </p>
+                </div>
+                <a href="lalita-sahasranama.html" class="book-btn">Read & Download PDF →</a>
+            </div>
+
+            <!-- Future Holder Slot for your next text additions -->
+            <div class="placeholder-card">
+                <p>More Vedic translations, Upanishad commentaries, and Shanti Mantras coming soon...</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
