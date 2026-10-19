@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री ललिता सहस्रनाम स्तोत्र | Spiritual Space</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #d4af37;
+            --text-muted: #666666;
+            --border-color: #eaeaea;
+        }
 
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            margin: 0; padding: 0; line-height: 1.6; color: #333333; background-color: #ffffff;
+        }
+
+        header {
+            text-align: center; padding: 30px 20px; border-bottom: 1px solid var(--border-color);
+        }
+
+        header a {
+            color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500;
+        }
+
+        header a:hover { color: var(--primary-color); }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        .page-header { text-align: center; margin-bottom: 30px; }
+
+        .page-header h2 { font-size: 2rem; font-weight: normal; color: var(--primary-color); margin: 0 0 10px 0; }
+
+        .divider { width: 60px; height: 1px; background-color: var(--accent-color); margin: 20px auto; }
+
+        .pdf-actions {
+            text-align: center; margin-bottom: 30px; background-color: #fffdf6; border: 1px solid #f1e5bc; padding: 25px; border-radius: 4px;
+        }
+
+        .download-btn {
+            display: inline-block; background-color: var(--primary-color); color: #ffffff !important; text-decoration: none; padding: 14px 30px; font-weight: bold; border-radius: 4px; font-size: 1rem; transition: background 0.2s ease; margin-top: 10px; font-family: sans-serif;
+        }
+
+        .download-btn:hover { background-color: var(--accent-color); }
+
+        /* Video Section Container styling */
+        .video-section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .pdf-viewer-container {
+            position: relative; width: 100%; height: 850px; border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; background: #f5f5f5;
+        }
+
+        .pdf-viewer-container iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="sacred-chants.html">← Back to Sacred Chants</a>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>श्री ललिता सहस्रनाम स्तोत्र</h2>
+            <p>श्लोक एवं हिन्दी अर्थ सहित (संपूर्ण पुस्तक)</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="pdf-actions">
+            <p style="margin: 0 0 15px 0; color: #555; font-size: 1rem;">यदि आपके ब्राउज़र में लोड होने में समय लग रहा है, तो आप नीचे बटन से सीधे डाउनलोड कर सकते हैं।</p>
+            <a href="./lalita-sahasranama.pdf" download="lalita-sahasranama.pdf" class="download-btn">📥 Download Free PDF File</a>
+        </div>
+
+        <!-- NEW AUDIO/VIDEO CHANT LINK SECTION -->
+        <div class="video-section">
+            <h3 style="font-size: 1.3rem; font-weight: normal; color: var(--primary-color); margin-bottom: 15px; text-align: left;">
+                ▶️ मंत्र श्रवण (Listen to the Chant)
+            </h3>
+            <div class="video-wrapper">
+                <!-- Using an official, high-quality YouTube embed for Lalita Sahasranama Stotram -->
+                <iframe 
+                    src="https://youtu.be/Hz0nnZB2QO8?si=hP8fI5SoQPcK8BP2" 
+                    title="Sri Lalita Sahasranama Stotram" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="font-style: italic; color: var(--text-muted); font-size: 0.9rem; margin-top: 8px;">
+                Courtesy: Sindhu Smitha - Hindi @ Youtube
+            </p>
+        </div>
+
+        <!-- DIGITAL TABLE PDF VIEWER -->
+        <h3 style="font-size: 1.3rem; font-weight: normal; color: var(--primary-color); margin-bottom: 15px;">
+            📖 श्लोक एवं हिंदी अनुवाद (Text & Meaning)
+        </h3>
+        <div class="pdf-viewer-container">
+            <iframe src="./lalita-sahasranama.pdf" type="application/pdf">
+                <p>आपका डिवाइस डायरेक्ट पीडीएफ देखने का समर्थन नहीं करता है। कृपया ऊपर दिए गए बटन का उपयोग करके फ़ाइल डाउनलोड करें।</p>
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
