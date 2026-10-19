@@ -3,55 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacred Chants | Spiritual Space</title>
+    <title>Sacred Chants | Sacred Vedic Light</title>
     <style>
+        /* Exact color scheme matching your home page */
         :root {
             --primary-color: #1a1a1a;
             --accent-color: #d4af37;
             --text-muted: #666666;
-            --bg-light: #fcfcfc;
             --border-color: #eaeaea;
+            --bg-light: #fafafa;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* Inheriting the elegant traditional font family of your homepage */
+            font-family: "Georgia", "Times New Roman", serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: #333;
+            color: #333333;
             background-color: #ffffff;
         }
 
-        /* Top Navigation Header */
+        /* Home page Header Replicas */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
+            text-align: center;
+            padding: 40px 20px 20px 20px;
             border-bottom: 1px solid var(--border-color);
         }
-        header .logo {
-            font-weight: bold;
-            font-size: 1.2rem;
+
+        header .site-title {
+            font-size: 2.2rem;
+            font-weight: normal;
             color: var(--primary-color);
+            margin: 0 0 5px 0;
             text-decoration: none;
+            display: block;
+            letter-spacing: 1px;
         }
+
+        header .site-subtitle {
+            font-size: 1rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 25px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
         header nav a {
             color: var(--text-muted);
             text-decoration: none;
-            margin-left: 20px;
             font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-        header nav a:hover, header nav a.active {
-            color: var(--accent-color);
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
         }
 
-        /* Main Container */
+        header nav a:hover, header nav a.active {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        /* Layout Main Body Area */
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 50px 20px;
+            padding: 60px 24px;
         }
 
         .page-header {
@@ -59,80 +81,85 @@
             margin-bottom: 50px;
         }
 
-        .page-header h1 {
-            font-size: 2.4rem;
+        .page-header h2 {
+            font-size: 2rem;
+            font-weight: normal;
             color: var(--primary-color);
-            margin-bottom: 10px;
+            margin: 0 0 15px 0;
         }
 
         .page-header p {
             font-style: italic;
             color: var(--text-muted);
             font-size: 1.1rem;
+            margin: 0;
         }
 
         .divider {
             width: 60px;
-            height: 3px;
+            height: 1px;
             background-color: var(--accent-color);
-            margin: 20px auto;
+            margin: 25px auto;
         }
 
-        /* Texts Grid Layout */
+        /* Library Cards Arrangement Grid */
         .library-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
+            margin-top: 20px;
         }
 
-        /* Dynamic Book Card */
-        .book-card {
+        .chant-card {
             background: #ffffff;
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 4px;
             padding: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.01);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s ease;
         }
 
-        .book-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+        .chant-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
         }
 
-        .book-tag {
-            font-size: 0.8rem;
+        .card-tag {
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--accent-color);
             font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
         }
 
-        .book-title {
-            font-size: 1.4rem;
-            margin: 10px 0 5px 0;
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin: 0 0 8px 0;
             color: var(--primary-color);
         }
 
-        .book-subtitle {
+        .card-subtitle {
             font-style: italic;
             color: var(--text-muted);
             font-size: 0.95rem;
-            margin-bottom: 15px;
+            margin: 0 0 15px 0;
         }
 
-        .book-description {
-            color: #555;
+        .card-description {
+            color: #555555;
             font-size: 0.95rem;
             line-height: 1.6;
+            margin: 0 0 25px 0;
+            font-family: sans-serif; /* Clean reading font matching home text styles */
         }
 
-        .book-btn {
+        .card-btn {
             display: inline-block;
-            margin-top: 25px;
             padding: 12px 24px;
             background-color: var(--primary-color);
             color: #ffffff;
@@ -141,18 +168,18 @@
             font-weight: 500;
             font-size: 0.9rem;
             text-align: center;
-            transition: background 0.3s;
+            transition: background 0.2s ease;
+            font-family: sans-serif;
         }
 
-        .book-btn:hover {
+        .card-btn:hover {
             background-color: var(--accent-color);
         }
 
-        /* Future placeholder slot card */
-        .placeholder-card {
+        .upcoming-card {
             border: 1px dashed #cccccc;
-            border-radius: 8px;
-            background: #fafafa;
+            border-radius: 4px;
+            background: var(--bg-light);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -160,49 +187,89 @@
             text-align: center;
             color: var(--text-muted);
             font-style: italic;
+            min-height: 250px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 30px 15px 15px 15px; }
+            header .site-title { font-size: 1.8rem; }
+            header nav { gap: 10px 15px; }
+            .container { padding: 40px 15px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Matching Home Page Branding Headers Row -->
     <header>
-        <a href="index.html" class="logo">Spiritual Space</a>
+        <a href="index.html" class="site-title">Spiritual Space</a>
+        <div class="site-subtitle">Sacred Vedic Light</div>
         <nav>
-            <a href="index.html">Wisdom</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#wisdom">Wisdom</a>
+            <a href="index.html#chart">Chart Analysis</a>
+            <a href="index.html#muhurat">Muhurat</a>
+            <a href="index.html#dakshina">Dakshina</a>
             <a href="sacred-chants.html" class="active">Sacred Chants</a>
         </nav>
     </header>
 
     <div class="container">
-        
         <div class="page-header">
-            <h1>Sacred Chants & Wisdom</h1>
-            <p>"Vani becomes sacred when it sings the praise of the Divine."</p>
+            <h2>Welcome to Sacred Chants</h2>
+            <p>"In the quietude of the mind, the stars speak a language of guidance."</p>
             <div class="divider"></div>
         </div>
 
         <div class="library-grid">
-            
-            <!-- Current Book: Lalita Sahasranama -->
-            <div class="book-card">
+            <!-- Card 1: Sri Lalita Sahasranama -->
+            <div class="chant-card">
                 <div>
-                    <span class="book-tag">Stotra & Meaning</span>
-                    <h3 class="book-title">श्री ललिता सहस्रनाम</h3>
-                    <p class="book-subtitle">The Thousand Names of the Divine Mother</p>
-                    <p class="book-description">
-                        Dive into the deep spiritual Hindi meanings, structure, and cosmic significance of the 1,000 sacred names of Goddess Tripura Sundari. Derived directly from the Brahmanda Purana.
+                    <span class="card-tag">Stotra & Meaning</span>
+                    <h3 class="card-title">श्री ललिता सहस्रनाम</h3>
+                    <p class="card-subtitle">The Thousand Names of the Divine Mother</p>
+                    <p class="card-description">
+                        Explore the deep spiritual Hindi meanings, system breakdowns, and cosmic framework of the 1,000 sacred names of Goddess Tripura Sundari from the Brahmanda Purana.
                     </p>
                 </div>
-                <a href="lalita-sahasranama.html" class="book-btn">Read & Download PDF →</a>
+                <a href="lalita-sahasranama.html" class="card-btn">Read & Download PDF →</a>
             </div>
 
-            <!-- Future Holder Slot for your next text additions -->
-            <div class="placeholder-card">
-                <p>More Vedic translations, Upanishad commentaries, and Shanti Mantras coming soon...</p>
+            <!-- Card 2: Sri Vishnu Sahasranama -->
+            <div class="chant-card">
+                <div>
+                    <span class="card-tag">Stotra & Meaning</span>
+                    <h3 class="card-title">श्री विष्णु सहस्रनाम</h3>
+                    <p class="card-subtitle">The Thousand Names of the Supreme Protector</p>
+                    <p class="card-description">
+                        A definitive compilation of the 1,000 names of Lord Vishnu as chanted by Bhishma Pitamah in the Mahabharata. Includes absolute word-for-word Hindi translations.
+                    </p>
+                </div>
+                <a href="vishnu-sahasranama.html" class="card-btn">Read & Download PDF →</a>
             </div>
 
+            <!-- Future Expansion Card Block Slot -->
+            <div class="upcoming-card">
+                <p>More Vedic translations, Upanishad breakdowns, and Shanti Mantras coming soon...</p>
+            </div>
         </div>
     </div>
+
+    <!-- Home Page Replica Footer -->
+    <footer>
+        © 2026 Spiritual Space. Offered humbly in service to society.<br>
+        <span style="font-size: 0.8rem; color: #999;">Terms, Disclaimer & Sacred Privacy</span>
+    </footer>
 
 </body>
 </html>
